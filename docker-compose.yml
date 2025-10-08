@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: pacientes-db
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=pacientesApi
+      - POSTGRES_PASSWORD=pacientesApi
+      - POSTGRES_DB=pacientes_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/da
+  keycloack:
+    image: quay.io/keycloak/keycloak:25.0.0
+    container_name: keycloak-server
+    ports:
+      - "8180:8080" #diferente do banco e da API
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    command: start-dev
+
+volumes:
+  postgres_data:
