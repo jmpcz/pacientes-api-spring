@@ -55,7 +55,7 @@ Todos os endpoints (exceto a documentação) são protegidos e exigem um token d
 
 **[João Marcelo Picazo]**
 
-- Github: [jmpcz] (https://github.com/seu-usuario)
+- Github: [jmpcz] (https://github.com/jmpcz)
 - LinkedIn: [joao-marcelo-picazo] (www.linkedin.com/in/joão-marcelo-picazo)
 
 ---
